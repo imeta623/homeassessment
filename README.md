@@ -2,6 +2,10 @@
 
 A simple Node.js Express API that connects to MongoDB and retrieves user data with age filtering.
 
+## Approach
+
+I built a clean Express server with Mongoose for MongoDB integration, implementing the age filtering requirement directly in the database query using `$gt: 21`. The solution includes proper error handling for invalid ObjectIds and returns appropriate HTTP status codes (404 for not found, 400 for invalid ID format). I used a seed script to populate test data with users of various ages to demonstrate the filtering functionality.
+
 ## Features
 
 - GET endpoint `/users/:id` that returns user details for users over 21
